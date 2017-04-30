@@ -1,13 +1,11 @@
 package app;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
 import config.SpringConfiguration;
 import impl.Person;
 
-@SpringBootApplication
 public class App {
 
 	public static void main(String[] args) {
