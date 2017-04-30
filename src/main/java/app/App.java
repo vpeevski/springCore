@@ -3,8 +3,8 @@ package app;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
+import api.PersonInterface;
 import config.SpringConfiguration;
-import impl.Person;
 
 public class App {
 
@@ -12,7 +12,7 @@ public class App {
 		AbstractApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 		try {
 			
-			Person person = context.getBean(Person.class);
+			PersonInterface person = context.getBean(PersonInterface.class);
 			System.out.println(person.getFirstName());
 			System.out.println(person.getCar());
 			
